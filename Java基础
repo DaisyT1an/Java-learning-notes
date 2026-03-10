@@ -1,1 +1,3 @@
-目录：
+我老是忘记Java里main函数的拼写，我在这里把它记下来：
+public static void main(String args) {}
+ps:一定要写在类名下哟
