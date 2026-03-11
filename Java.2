@@ -1,0 +1,42 @@
+今天复习了代码中数据怎么写，怎么存，怎么算；
+
+怎么写：使用字面量：整数（1，2）、小数（1.2,3.4）、字符串（"Hello World"）,字符（‘a’,'b'）,bool（true，false，0，1），空值（null）
+怎么存：使用变量：就像一个储存数据的小空间，
+  变量的定义格式：  数据类型 变量名 = 数据值；（例如： int a = 0;）
+  练习：微信余额
+    微信余额：0元
+    支付宝余额：10元
+    银行卡余额：20元
+    问题一：请问现在一共有多少钱？
+    问题二：微信收了10元红包，又发了2元红包，余额多少？
+代码如下：
+public class Test {
+    public static void main(String[] args) {
+        /*练习：微信余额
+        微信余额：0元
+        支付宝余额：10元
+        银行卡余额：20元
+        问题一：请问现在一共有多少钱？
+        问题二：微信收了10元红包，又发了2元红包，余额多少？*/
+
+        //第一步：定义变量
+        double weixin = 0;
+        double zhifubao = 10;
+        double yinhangka = 20;
+
+        //第二步：计算
+        double sum = weixin + zhifubao + yinhangka;
+
+        //第三步：输出
+        System.out.println("现在一共有：" + sum + "元");
+
+        //问题二
+        //第四步：对数据进行修改
+        weixin = weixin + 10 - 2;
+
+        //第五步：输出
+        System.out.println("微信余额：" + weixin + "元");
+    }
+}
+
+依旧遵循 定规则，
