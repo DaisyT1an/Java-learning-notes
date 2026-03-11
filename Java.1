@@ -1,0 +1,39 @@
+我老是忘记Java里main函数的拼写，我在这里把它记下来：
+public static void main(String args) {}
+ps:一定要写在类名下哟
+
+在AI时代下，一定要学会使用AI来帮助写代码，学习代码，
+第一课：我使用ai工具辅助我写了一个彩票中奖系统
+代码如下：
+package edu.njucm;
+
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        /*测试：设计一个彩票中奖系统，首先给一个7位数：3786434 现在我要的是：用户输入一个7位数，
+        输入的7位数，如果7位数的每一位数字都和7位数的每一位数字相同，则中奖，否则没有中奖。
+         */
+        
+        //第一步：给定一个7位数
+        int number = 1234567;
+        //第二步：从键盘读取一个7位数
+        System.out.println("请输入一个7位数：");
+        int input = new Scanner(System.in).nextInt();
+        System.out.println("输入的7位数：" + input);
+        System.out.println("生成的7位数：" + number);
+        //第三步：判断用户输入的7位数是否和生成7位数相同,并输出中奖结果
+        if (input == number) {
+            System.out.println("恭喜你，中奖了！");
+        }else {
+            System.out.println("没有中奖！");
+        }
+    }
+}
+
+so‼️要正确的使用ai工具来写代码，要做到以下几步：
+1、定规则：比如这个系统，我的规则就是输入的数和中奖号码一致则中奖
+2、拆业务：我想要达到上面规则所说的效果，我应该通过哪些步骤来实现，这里我就分成了三步，先用//注释的形式来写出每一步需要做什么
+3、逐个实现：在注释下使用AI来帮助我完成这一步的操作
+4、排除bug：再更改ai所造成的错误
+5、最终运行：才能得到我真正想要的结果
