@@ -1,1 +1,56 @@
 Java中基本的数据类型：
+  整数：byte short int long
+  浮点数： float double
+  字符： char
+  布尔类型：boolean
+
+public class Test {
+    public static void main(String[] args) {
+        /*练习: 计算你的BMI:
+        BMI身体质量指数计算公式：BMI=体重/身高^2（体重单位：千克，身高单位：米）
+        BMI数值（kg/m^2)   身体状态    健康风险
+        <18.5             消瘦        部分增加
+        18.5-23.9         正常        正常
+        24.0-26.9         偏胖        增加
+        27.0-29.9         肥胖        中度增加
+        ≥30               严重肥胖    严重增加*/
+
+        //定义变量记录体重、身高
+        double weight = 60.0;
+        double height = 1.8;
+
+        //计算BMI
+        double bmi = weight / (height * height);
+        System.out.println("BMI=" + bmi);
+
+        //判断身体状态以及健康风险
+        if (bmi < 18.5) {
+            System.out.println("体重过轻");
+        }
+        else if (bmi >= 18.5 && bmi < 23.9) {
+            System.out.println("正常");
+        }
+        else if (bmi >= 24.0 && bmi < 26.9) {
+            System.out.println("偏胖");
+        }
+        else if (bmi >= 27.0 && bmi < 29.9) {
+            System.out.println("肥胖");
+        }
+        else {
+            System.out.println("严重肥胖");
+        }
+        System.out.println("健康风险");
+        if (bmi < 18.5) {
+            System.out.println("部分增加");
+        }
+        else if (bmi >= 18.5 && bmi < 23.9) {
+            System.out.println("正常");
+        }
+        else if (bmi >= 24.0 && bmi < 26.9) {
+            System.out.println("增加");
+        }
+        else if (bmi >= 27.0 && bmi < 29.9) {
+            System.out.println("中度增加");
+        }
+    }
+}
